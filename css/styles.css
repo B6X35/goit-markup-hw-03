@@ -1,0 +1,368 @@
+:root {
+    --normal-color: #212121;
+    --description-color: #757575;
+    --active-color: #2196F3;
+    --background-color: #2F303A;
+    --contact-color: #999999;
+    --footer-text-color: #FFFFFF;
+}
+
+body {
+    font-family: 'Roboto';
+    color: var(--normal-color);
+    margin-left: 215px;
+    margin-right: 215px;
+}
+
+.logo-box {
+    border: 2px;
+    width: 145;
+    height: 31;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    display: inline-block;
+}
+
+.container {
+    width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.position-menu {
+    margin-left: 50px;
+    
+}
+
+.menu-box {
+    display: flex;
+    padding: 30px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-box.center5 {
+    justify-content: center;
+}
+
+.menu1 {
+    text-decoration: none;
+    color: var(--normal-color);
+}
+
+.menu2 {
+    text-decoration: none;
+    color: var(--active-color);
+}
+
+header{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+button {
+    cursor: pointer;
+  }
+
+.menu1:hover,
+.menu1:focus {
+    color: var(--active-color);
+}
+
+.button1:hover,
+.button1:focus {
+    color: var(--footer-text-color);
+    background: #188CE8;
+}
+
+.button2:hover,
+.button2:focus {
+    color: var(--footer-text-color);
+    background: var(--active-color);
+}
+
+.head-bg {
+    background-color: #2F303A;
+    height: 600;
+}
+
+.heading1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.heading2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.heading3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    padding-top: 94px;
+    padding: 50px;
+}
+
+.button-box {
+    display: flex;
+    padding: 30px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-box.center4 {
+    justify-content: center;
+}
+
+.button1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--footer-text-color);
+    background-color: var(--active-color);
+}
+
+.button2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-left: 8px;
+}
+
+.feature-box {
+    display: flex;
+    padding: 30px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-box.center3 {
+    justify-content: center;
+}
+
+.feature {
+    border: 2px;
+    width: 270px;
+    height: 101;
+    margin-left: 30px;
+}
+
+.feature1 {
+    border: 1px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.feature2 {
+    border: 1px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--description-color);
+}
+
+.img-box {
+    display: flex;
+    padding: 30px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-box.center2 {
+    justify-content: center;
+}
+
+.img1 {
+    width: 370;
+    height: 294;
+    margin-left: 30px;
+}
+
+.team-bg {
+    height: 648px;
+    background-color: #F5F4FA;
+}
+
+.team-box {
+    display: flex;
+    padding: 30px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-left: 60px;
+    padding-top: 5px;
+}
+
+.team2 {
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--description-color);
+    padding-left: 60px;
+}
+
+.team-box.center1 {
+    justify-content: center;
+}
+
+.team-box .card1 {
+    display: block;
+    border: 1px;
+    width: 270;
+    height: 368;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF; 
+    margin-left: 30px;
+}
+
+.card-box {
+    display: flex;
+    padding: 30px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-box.center6 {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card2 {
+    display: block;
+    border: 1px;
+    width: 370;
+    height: 404;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.project1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.project2 {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--description-color);
+}
+
+.contact1 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--description-color);
+    margin-left: 50px;
+}
+
+.contact2 {
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    color: var(--contact-color);
+}
+
+.contact1:focus,
+.contact1:hover {
+    color: var(--active-color);
+}
+
+.contact2:focus,
+.contact2:hover {
+    color: var(--active-color);
+}
+
+.logo1 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--active-color);
+    display: inline-block;
+}
+
+.logo2 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--background-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 92px;
+}
+
+.logo2:visited {
+    color: var(--background-color);
+}
+
+.logo3 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--active-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 215px;
+}
+
+.logo4 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--footer-text-color);
+}
+
+
+footer {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--footer-text-color);
+    position: absolute;
+    background: var(--background-color);
+    left: 0px;
+    right: 0px;
+    height: 200px;
+
+}
+
+address {
+    font-style: normal;
+    margin-left: 215px;
+}
+
+
