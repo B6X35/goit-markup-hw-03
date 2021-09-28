@@ -1,3 +1,4 @@
+/* ===================START GLOBAL============================================================================ */
 :root {
     --normal-color: #212121;
     --description-color: #757575;
@@ -14,6 +15,86 @@ body {
     margin-right: 215px;
 }
 
+li {
+    list-style-type: none;
+    display: inline;
+    display: inline-block;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===================END GLOBAL============================================================================ */
+/* ===================START HEADER============================================================================ */
+
+.logo1 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--active-color);
+    display: inline-block;
+}
+
+.logo2 {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--background-color);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo2:visited {
+    color: var(--background-color);
+}
+
+header{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.header-top {
+    position: relative;
+    display: flex;
+}
+
+.header-top.center7 {
+    justify-content: center;
+}
+
+.header-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-top-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-con {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .top-line {
     border: 1px solid #ECECEC;
 }
@@ -24,28 +105,9 @@ body {
     height: 31;
 }
 
-li {
-    list-style-type: none;
-    display: inline;
-    display: inline-block;
-}
-
-.container {
-    width: 1600px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .position-menu {
     margin-left: 50px;
     
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .menu-box {
@@ -60,6 +122,10 @@ li {
     justify-content: center;
 }
 
+.menu-pad {
+    margin-left: 50px;
+}
+
 .menu1 {
     text-decoration: none;
     color: var(--normal-color);
@@ -70,15 +136,26 @@ li {
     color: var(--active-color);
 }
 
-header{
+.contact1 {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
+    text-decoration: none;
+    color: var(--description-color);
+    margin-left: 50px;
 }
+
+.contact1:focus,
+.contact1:hover {
+    color: var(--active-color);
+}
+
+/* ===================END HEADER============================================================================ */
+/* ===================START CAP============================================================================ */
 
 button {
     cursor: pointer;
-  }
+}
 
 .menu1:hover,
 .menu1:focus {
@@ -91,11 +168,6 @@ button {
     background: #188CE8;
 }
 
-.button2:hover,
-.button2:focus {
-    color: var(--footer-text-color);
-    background: var(--active-color);
-}
 
 .head-bg {
     background-color: #2F303A;
@@ -108,22 +180,6 @@ button {
     line-height: 1.5;
     text-align: center;
     color: #FFFFFF;
-}
-
-.heading2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-}
-
-.heading3 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    padding-top: 94px;
-    padding: 50px;
 }
 
 .button-box {
@@ -146,12 +202,9 @@ button {
     background-color: var(--active-color);
 }
 
-.button2 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.6;
-    margin-left: 8px;
-}
+/* ===================END CAP============================================================================ */
+/* ===================START FEATURE============================================================================ */
+
 
 .feature-box {
     display: flex;
@@ -186,6 +239,16 @@ button {
     color: var(--description-color);
 }
 
+/* ===================END FEATURE============================================================================ */
+/* ===================START IMG WORK============================================================================ */
+
+.heading2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
 .img-box {
     display: flex;
     padding: 30px;
@@ -202,6 +265,18 @@ button {
     width: 370;
     height: 294;
     margin-left: 30px;
+}
+
+/* ===================END IMG WORK============================================================================ */
+/* ===================START TEAM============================================================================ */
+
+.heading3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    padding-top: 94px;
+    padding: 50px;
 }
 
 .team-bg {
@@ -247,6 +322,24 @@ button {
     margin-left: 30px;
 }
 
+/* ===================END TEAM============================================================================ */
+/* ===================START PORTFOLIO============================================================================ */
+
+.button2 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-left: 8px;
+}
+
+.button2:hover,
+.button2:focus {
+    color: var(--footer-text-color);
+    background: var(--active-color);
+}
+
+/* ===================START PORTFOLIO PROJECT============================================================================ */
+
 .card-box {
     display: flex;
     padding: 30px;
@@ -284,55 +377,43 @@ button {
     color: var(--description-color);
 }
 
-.contact1 {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.2;
-    text-decoration: none;
-    color: var(--description-color);
-    margin-left: 50px;
-}
+/* ===================END PORTFOLIO PROJECT============================================================================ */
+/* ===================END PORTFOLIO============================================================================ */
+/* ===================START FOOTER============================================================================ */
 
-.contact2 {
+footer {
     font-size: 14px;
     line-height: 1.7;
-    text-decoration: none;
-    color: var(--contact-color);
+    color: var(--footer-text-color);
+    position: absolute;
+    background: var(--background-color);
+    left: 0px;
+    right: 0px;
+    height: 200px;
+    
 }
 
-.contact1:focus,
-.contact1:hover {
-    color: var(--active-color);
+.footer-bot {
+    position: relative;
+    display: flex;
 }
 
-.contact2:focus,
-.contact2:hover {
-    color: var(--active-color);
+.footer-bot-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.logo1 {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-    color: var(--active-color);
-    display: inline-block;
+.footer-bot-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.logo2 {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    color: var(--background-color);
-    text-decoration: none;
-    display: inline-block;
-    margin-right: 92px;
-}
-
-.logo2:visited {
-    color: var(--background-color);
+.footer-bot-adre {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .logo3 {
@@ -343,7 +424,6 @@ button {
     color: var(--active-color);
     text-decoration: none;
     display: inline-block;
-    margin-left: 215px;
 }
 
 .logo4 {
@@ -357,21 +437,28 @@ button {
 }
 
 
-footer {
+.contact2 {
     font-size: 14px;
     line-height: 1.7;
-    color: var(--footer-text-color);
-    position: absolute;
-    background: var(--background-color);
-    left: 0px;
-    right: 0px;
-    height: 200px;
-
+    text-decoration: none;
+    color: var(--contact-color);
 }
+
+
+.contact2:focus,
+.contact2:hover {
+    color: var(--active-color);
+}
+
 
 address {
     font-style: normal;
     margin-left: 215px;
 }
+
+/* ===================END FOOTER============================================================================ */
+
+
+
 
 
