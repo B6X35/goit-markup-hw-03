@@ -115,10 +115,6 @@ header{
     
 }
 
-.top-line {
-    border: 1px solid var(--top-line-color);
-}
-
 .logo-box {
     border: 2px;
     width: 145;
