@@ -169,11 +169,11 @@ header{
 /* ===================END HEADER============================================================================ */
 /* ===================START TITLE============================================================================ */
 
-.cap-bg {
+.title-bg {
     background-color: var(--background-color);
 }
 
-.cap-container {
+.title-container {
     height: 600px;
 }
 
@@ -188,7 +188,7 @@ button {
 }
 
 
-.cap-pad {
+.title-pad {
     padding-top: 200px;
     padding-bottom: 200px;
 }
