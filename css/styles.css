@@ -2,23 +2,14 @@
 :root {
     --normal-color: #212121;
     --description-color: #757575;
-    --active-color: #2196F3;
+    --active-1-color: #2196F3;
+    --active-2-color: #188CE8;
     --background-color: #2F303A;
     --contact-color: #999999;
-    --footer-text-color: #FFFFFF;
-}
-
-body {
-    font-family: 'Roboto';
-    color: var(--normal-color);
-    margin-left: 215px;
-    margin-right: 215px;
-}
-
-li {
-    list-style-type: none;
-    display: inline;
-    display: inline-block;
+    --white-text-color: #FFFFFF;
+    --top-line-color: #ECECEC;
+    --bg-team-color: #F5F4FA;
+    --bg-card-port-color: solid #EEEEEE;
 }
 
 .container {
@@ -27,10 +18,43 @@ li {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+}
+
+body {
+    font-family: 'Roboto';
+    color: var(--normal-color);
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+    display: inline-block;
+}
+
+
+h1,
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* ===================END GLOBAL============================================================================ */
 /* ===================START HEADER============================================================================ */
+
+.container-header {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid var(--top-line-color);
+}
 
 .logo1 {
     font-family: 'Raleway';
@@ -38,7 +62,7 @@ li {
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-    color: var(--active-color);
+    color: var(--active-1-color);
     display: inline-block;
 }
 
@@ -62,11 +86,6 @@ header{
     line-height: 1.2;
 }
 
-.header-top {
-    position: relative;
-    display: flex;
-}
-
 .header-top.center7 {
     justify-content: center;
 }
@@ -83,20 +102,21 @@ header{
     justify-content: flex-start;
 }
 
-.header-nav {
+.header-top-nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
+
 .header-con {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    
 }
 
 .top-line {
-    border: 1px solid #ECECEC;
+    border: 1px solid var(--top-line-color);
 }
 
 .logo-box {
@@ -105,14 +125,8 @@ header{
     height: 31;
 }
 
-.position-menu {
-    margin-left: 50px;
-    
-}
-
 .menu-box {
     display: flex;
-    padding: 30px;
     list-style: none;
     margin-left: auto;
     margin-right: auto;
@@ -123,7 +137,7 @@ header{
 }
 
 .menu-pad {
-    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .menu1 {
@@ -133,7 +147,7 @@ header{
 
 .menu2 {
     text-decoration: none;
-    color: var(--active-color);
+    color: var(--active-1-color);
 }
 
 .contact1 {
@@ -142,36 +156,45 @@ header{
     line-height: 1.2;
     text-decoration: none;
     color: var(--description-color);
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: 50px;
 }
 
 .contact1:focus,
 .contact1:hover {
-    color: var(--active-color);
+    color: var(--active-1-color);
+}
+
+.menu1:hover,
+.menu1:focus {
+    color: var(--active-1-color);
 }
 
 /* ===================END HEADER============================================================================ */
 /* ===================START CAP============================================================================ */
 
+.cap-bg {
+    background-color: var(--background-color);
+}
+
+.cap-container {
+    height: 600px;
+}
+
 button {
     cursor: pointer;
 }
 
-.menu1:hover,
-.menu1:focus {
-    color: var(--active-color);
-}
-
 .button1:hover,
 .button1:focus {
-    color: var(--footer-text-color);
-    background: #188CE8;
+    color: var(--white-text-color);
+    background: var(--active-2-color);
 }
 
 
-.head-bg {
-    background-color: #2F303A;
-    height: 600;
+.cap-pad {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .heading1 {
@@ -179,7 +202,7 @@ button {
     font-size: 44px;
     line-height: 1.5;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--white-text-color);
 }
 
 .button-box {
@@ -198,8 +221,8 @@ button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    color: var(--footer-text-color);
-    background-color: var(--active-color);
+    color: var(--white-text-color);
+    background-color: var(--active-1-color);
 }
 
 /* ===================END CAP============================================================================ */
@@ -281,7 +304,7 @@ button {
 
 .team-bg {
     height: 648px;
-    background-color: #F5F4FA;
+    background-color: var(--bg-team-color);
 }
 
 .team-box {
@@ -296,15 +319,16 @@ button {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
-    padding-left: 60px;
-    padding-top: 5px;
+    text-align: center;
+    padding-top: 30;
 }
 
 .team2 {
     font-size: 16px;
     line-height: 1.2;
     color: var(--description-color);
-    padding-left: 60px;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .team-box.center1 {
@@ -318,7 +342,7 @@ button {
     height: 368;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    background-color: #FFFFFF; 
+    background-color: var(--white-text-color); 
     margin-left: 30px;
 }
 
@@ -334,8 +358,8 @@ button {
 
 .button2:hover,
 .button2:focus {
-    color: var(--footer-text-color);
-    background: var(--active-color);
+    color: var(--white-text-color);
+    background: var(--active-1-color);
 }
 
 /* ===================START PORTFOLIO PROJECT============================================================================ */
@@ -358,8 +382,8 @@ button {
     border: 1px;
     width: 370;
     height: 404;
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--white-text-color);
+    border: 1px var(--bg-card-port-color);
     box-sizing: border-box;
     margin-left: 30px;
     margin-bottom: 30px;
@@ -369,12 +393,16 @@ button {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    margin-left: 24px;
+    margin-top: 20px;
 }
 
 .project2 {
     font-size: 16px;
     line-height: 1.9;
     color: var(--description-color);
+    margin-left: 24px;
+    margin-bottom: 20px;
 }
 
 /* ===================END PORTFOLIO PROJECT============================================================================ */
@@ -384,13 +412,18 @@ button {
 footer {
     font-size: 14px;
     line-height: 1.7;
-    color: var(--footer-text-color);
+    color: var(--white-text-color);
     position: absolute;
     background: var(--background-color);
     left: 0px;
     right: 0px;
-    height: 200px;
+    height: 252px;
     
+}
+
+.footer-bot-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-bot {
@@ -421,9 +454,10 @@ footer {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    color: var(--active-color);
+    color: var(--active-1-color);
     text-decoration: none;
     display: inline-block;
+    margin-bottom: 20px;
 }
 
 .logo4 {
@@ -433,7 +467,8 @@ footer {
     line-height: 1.2;
     text-decoration: none;
     display: inline-block;
-    color: var(--footer-text-color);
+    color: var(--white-text-color);
+    margin-bottom: 20px;
 }
 
 
@@ -447,13 +482,13 @@ footer {
 
 .contact2:focus,
 .contact2:hover {
-    color: var(--active-color);
+    color: var(--active-1-color);
 }
 
 
-address {
+.address {
     font-style: normal;
-    margin-left: 215px;
+    margin-bottom: 9px;
 }
 
 /* ===================END FOOTER============================================================================ */
