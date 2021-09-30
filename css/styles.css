@@ -303,7 +303,7 @@ button {
 }
 
 .team {
-    flex-basis: calc(( 100% - 90px) / 4 );
+    flex-basis: calc(( 100% - 90px) / 54 );
     margin-left: 30px;
     margin-top: 30px
 }
