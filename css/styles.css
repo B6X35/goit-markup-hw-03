@@ -194,6 +194,7 @@ button {
     line-height: 1.5;
     text-align: center;
     color: var(--white-text-color);
+    margin-bottom: 30px;
 }
 
 .title-box {
@@ -378,7 +379,6 @@ button {
 }
 
 .border-text-project {
-    padding-top: 20px;
     border: 1px var(--bg-card-port-color);
 }
 
