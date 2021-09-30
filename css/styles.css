@@ -125,16 +125,13 @@ header{
 
 .menu-box {
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
-    margin-left: -50px;
-    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-pad {
-    flex-basis: calc(( 100% - 90px) / 10 );
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-right: 50px;
 }
 
 .menu1 {
@@ -193,7 +190,7 @@ button {
 
 .title {
     font-weight: 900;
-    font-size: 44px;
+    font-size: 90px;
     line-height: 1.5;
     text-align: center;
     color: var(--white-text-color);
@@ -229,7 +226,7 @@ button {
 }
 
 .feature {
-    flex-basis: calc(( 100% - 90px) / 4 );
+    flex-basis: calc(( 100% - 90px) / 5);
     margin-left: 30px;
     margin-top: 30px;
     border: 2px;
