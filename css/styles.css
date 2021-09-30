@@ -57,12 +57,7 @@ p {
 /* ===================END GLOBAL============================================================================ */
 /* ===================START HEADER============================================================================ */
 
-.container-header {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+.header-bot-line {
     border-bottom: 1px solid var(--top-line-color);
 }
 
@@ -71,7 +66,6 @@ p {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    text-decoration: none;
     color: var(--active-1-color);
     display: inline-block;
 }
@@ -82,7 +76,6 @@ p {
     font-size: 26px;
     line-height: 1.2;
     color: var(--background-color);
-    text-decoration: none;
     display: inline-block;
 }
 
@@ -100,12 +93,15 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-top-logo {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    text-decoration: none;
 }
 
 .header-top-nav {
@@ -129,13 +125,16 @@ header{
 
 .menu-box {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -50px;
+    margin-top: -50px;
 }
 
 .menu-pad {
-    margin-right: 50px;
+    flex-basis: calc(( 100% - 90px) / 10 );
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 .menu1 {
@@ -172,27 +171,24 @@ header{
 /* ===================START TITLE============================================================================ */
 
 .title-bg {
-    background-color: var(--background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-.title-container {
-    height: 600px;
+.title-bg {
+     background-color: var(--background-color);
 }
 
 button {
     cursor: pointer;
+    outline: 0;
 }
 
 .button1:hover,
 .button1:focus {
     color: var(--white-text-color);
     background: var(--active-2-color);
-}
-
-
-.title-pad {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    outline: 0;
 }
 
 .title {
@@ -203,12 +199,11 @@ button {
     color: var(--white-text-color);
 }
 
-.button-box {
-    display: flex;
-    padding: 30px;
+.title-box {
+    padding-top: 100px;
+    padding-bottom: 100px;
     list-style: none;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 .button1 {
@@ -225,19 +220,19 @@ button {
 
 .feature-box {
     display: flex;
-    padding: 30px;
+    flex-wrap: wrap;
     list-style: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -30px;
+    margin-top: -30px;
     padding-top: 94px;
     padding-bottom: 47px;
 }
 
 .feature {
-    border: 2px;
-    width: 270px;
-    height: 101;
+    flex-basis: calc(( 100% - 90px) / 4 );
     margin-left: 30px;
+    margin-top: 30px;
+    border: 2px;
 }
 
 .feature-title {
@@ -266,14 +261,19 @@ button {
 
 .subject-box {
     display: flex;
-    padding: 30px;
+    flex-wrap: wrap;
     list-style: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -30px;
+    margin-top: -30px;
     padding-top: 47px;
     padding-bottom: 94px;
 }
 
+.subject-img {
+    flex-basis: calc(( 100% - 90px) / 3 );
+    margin-left: 30px;
+    margin-top: 30px
+}
 
 .subject-size {
     width: 370;
@@ -294,16 +294,21 @@ button {
 }
 
 .team-bg {
-    height: 648px;
     background-color: var(--bg-team-color);
 }
 
 .team-box {
     display: flex;
-    padding: 30px;
+    flex-wrap: wrap;
     list-style: none;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.team {
+    flex-basis: calc(( 100% - 90px) / 4 );
+    margin-left: 30px;
+    margin-top: 30px
 }
 
 .team-title {
@@ -340,7 +345,18 @@ button {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
+    flex-basis: calc(( 100% - 90px) / 3 );
     margin-left: 8px;
+    margin-top: 8px;
+    background-color: var(--white-text-color);
+}
+
+.button-box-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: -8px;
+    margin-top: -8px;
 }
 
 .button2:hover,
@@ -396,11 +412,10 @@ footer {
     background: var(--background-color);
     left: 0px;
     right: 0px;
-    height: 252px;
     
 }
 
-.footer-bot-padding {
+.footer-bot-container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -410,22 +425,18 @@ footer {
     display: flex;
 }
 
-.footer-bot-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .footer-bot-logo {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    text-decoration: none;
 }
 
 .footer-bot-adre {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    text-decoration: none;
 }
 
 .logo3 {
@@ -467,7 +478,9 @@ footer {
 
 .address {
     font-style: normal;
-    margin-bottom: 9px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 /* ===================END FOOTER============================================================================ */
