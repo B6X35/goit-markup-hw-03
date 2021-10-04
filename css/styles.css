@@ -99,9 +99,9 @@ header{
 .header-top-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-top: 24px;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
 }
 
 .header-top-logo {
@@ -115,13 +115,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-left: 93px;
 }
 
 
 .header-con {
     display: flex;
     align-items: center;
-    
+    margin-left: auto;
 }
 
 .logo-box {
@@ -152,6 +153,9 @@ header{
 }
 
 .contact1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
@@ -187,8 +191,6 @@ button {
     cursor: pointer;
     outline: 0;
     border-radius: 4px;
-    width: 200px;
-    height: 50px;
 }
 
 .button1:hover,
@@ -221,7 +223,9 @@ button {
     line-height: 1.9;
     color: var(--white-text-color);
     background-color: var(--active-1-color);
+    padding: 10px 32px;
 }
+
 
 /* ===================END TITLE============================================================================ */
 /* ===================START FEATURE============================================================================ */
@@ -319,8 +323,9 @@ button {
 }
 
 .team {
+    flex-basis: calc((100% - 120px) / 4 );
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 30px
 }
 
 .team-title {
@@ -360,19 +365,19 @@ button {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
-    flex-basis: calc(( 100% - 90px) / 3 );
+    flex-basis: calc(( 100% - 90px) / 5 );
     margin-left: 8px;
     margin-top: 8px;
     background-color: var(--white-text-color);
     border-radius: 4px;
-    height: 38px;
-
+    padding: 6px 22px;
 }
 
 .button-box-portfolio {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: center;
     margin-left: -8px;
     margin-top: -8px;
     margin-bottom: 50px;
@@ -454,6 +459,7 @@ footer {
     align-items: center;
     justify-content: flex-start;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .footer-bot-adre {
@@ -471,7 +477,6 @@ footer {
     color: var(--active-1-color);
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 20px;
 }
 
 .logo4 {
@@ -482,7 +487,6 @@ footer {
     text-decoration: none;
     display: inline-block;
     color: var(--white-text-color);
-    margin-bottom: 20px;
 }
 
 
